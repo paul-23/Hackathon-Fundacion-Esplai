@@ -37,7 +37,7 @@
 }
 ```
 
-### Listar empleado por id
+### Listar usuario por id
 (solo si estas validado por token)
 
 **GET** ```localhost:8181/users/{id}```
@@ -46,7 +46,7 @@
 localhost:8181/users/2
 ```
 
-### Actualizar empleado
+### Actualizar usuario
 (solo si estas validado por token)
 
 **PUT** ```localhost:8181/users/{id}```
@@ -63,7 +63,7 @@ localhost:8181/users/2
 }
 ```
 
-### Eliminar empleado
+### Eliminar usuario
 (solo si estas validado por token)
 
 **DELETE** ```localhost:8181/users/{id}```
