@@ -98,14 +98,14 @@ public class UsersController {
 	@PutMapping("/users/{id}")
 	public Users updateUser(@PathVariable(name = "id") Long id, @RequestBody Users user) {
 
-		Users user_selected = new Users();
+		Users selectedUser = new Users();
 
-		user_selected = userServiceImpl.userById(id);
-		user_selected.setUsername(user.getUsername());
-		user_selected.setPassword(user.getPassword());
-		user_selected.setRole(user.getRole());
+		selectedUser = userServiceImpl.userById(id);
+		selectedUser.setUsername(user.getUsername());
+		selectedUser.setPassword(user.getPassword());
+		selectedUser.setRole(user.getRole());
 
-		return userServiceImpl.updateUser(user_selected);
+		return userServiceImpl.updateUser(selectedUser);
 	}
 
 	@DeleteMapping("/users/{id}")
